@@ -1,0 +1,5 @@
+Q8>Find the average Prevailing Wage for each Job for each Year (take part time and full time separate). Arrange the output in descending order.
+
+select ROUND(cast(avg(prevailing_wage) as bigint),2) as average, sum(prevailing_wage),count(prevailing_wage),job_title,year from h1b_app where full_time_position = 'Y' group by job_title,year order by average DESC;
+
+select ROUND(cast(avg(prevailing_wage) as bigint),2) as average, sum(prevailing_wage),count(prevailing_wage),job_title,year from h1b_app where full_time_position = 'N' group by job_title,year order by average DESC;

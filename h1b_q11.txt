@@ -1,0 +1,9 @@
+Q11>Export result for question no 10 to MySql database. 
+
+create table topten_job_sucess(employer_name VARCHAR(200) NOT NULL,certified_count INT NOT NULL,withdrawn_count INT NOT NULL,total_count INT NOT NULL,sucess FLOAT NOT NULL, PRIMARY KEY (employer_name));
+
+sqoop export --connect jdbc:mysql://localhost/project --username  root --password 'hadoop' --table topten_job_sucess –update-mode allowinsert –update-key employer_name --export-dir /project/output10/part-r-00000 --input-fields-terminated-by '\t';
+
+select * from topten_job_sucess;
+
+mysql> select * from topten_job_sucess;

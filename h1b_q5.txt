@@ -1,0 +1,8 @@
+Q5>Find the most popular top 10 job positions for H1B visa applications for each year?
+
+select count(*) as total,year,job_title from h1b_applications where year='2016' group by year,job_title order by total DESC limit 10;
+select count(*) as total,year,job_title from h1b_applications where year='2015' group by year,job_title order by total DESC limit 10;
+select count(*) as total,year,job_title from h1b_applications where year='2014' group by year,job_title order by total DESC limit 10;
+select count(*) as total,year,job_title from h1b_applications where year='2013' group by year,job_title order by total DESC limit 10;
+select count(*) as total,year,job_title from h1b_applications where year='2012' group by year,job_title order by total DESC limit 10;
+select count(*) as total,year,job_title from h1b_applications where year='2011' group by year,job_title order by total DESC limit 10;

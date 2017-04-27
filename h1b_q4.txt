@@ -1,0 +1,8 @@
+Q>Which top 5 employers file the most petitions each year?
+
+select count(*) as total,employer_name from h1b_applications where year='2016' group by employer_name order by total DESC limit 5;
+select count(*) as total,employer_name from h1b_applications where year='2015' group by employer_name order by total DESC limit 5;
+select count(*) as total,employer_name from h1b_applications where year='2014' group by employer_name order by total DESC limit 5;
+select count(*) as total,employer_name from h1b_applications where year='2013' group by employer_name order by total DESC limit 5;
+select count(*) as total,employer_name from h1b_applications where year='2012' group by employer_name order by total DESC limit 5;
+select count(*) as total,employer_name from h1b_applications where year='2011' group by employer_name order by total DESC limit 5;
