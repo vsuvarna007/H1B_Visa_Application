@@ -1,0 +1,23 @@
+1 a) Is the number of petitions with Data Engineer job title increasing over time? (MR)
+   b) Find top 5 job titles who are having highest growth in applications. (Pig)
+
+2 a) Which part of the US has the most Data Engineer jobs for each year? (MR)
+   b) find top 5 locations in the US who have got certified visa for each year. (hive)
+
+3)Which industry has the most number of Data Scientist positions? (MR)
+
+4)Which top 5 employers file the most petitions each year? (hive)
+
+5) Find the most popular top 10 job positions for H1B visa applications for each year? (hive)
+
+6) Find the percentage and the count of each case status on total applications for each year. Create a graph depicting the pattern of All the cases over the period of time. (pig)
+
+7) Create a bar graph to depict the number of applications for each year (MR)
+
+8) Find the average Prevailing Wage for each Job for each Year (take part time and full time separate). Arrange the output in descending order. (hive)
+
+9) Which are  employers along with the number of petitions who have the success rate more than 70%  in petitions and total petitions filed more than 1000? (pig)
+
+10) Which are the  job positions along with the number of petitions which have the success rate more than 70%  in petitions and total petitions filed more than 1000? (pig)
+
+11) Export result for question no 10 to MySql database. (sqoop)
